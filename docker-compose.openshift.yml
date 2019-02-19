@@ -43,7 +43,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - db-data:/var/lib/pgsql/data
+      - /var/lib/postgresql
   frontend:
     image: node:8.9.4
     hostname: frontend
@@ -132,6 +132,3 @@ services:
       - "8000:8000"
     depends_on:
       - db
-volumes:
-  db-data:
-
