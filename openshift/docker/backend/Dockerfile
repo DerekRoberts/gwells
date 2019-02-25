@@ -56,6 +56,3 @@ RUN echo "/usr/local/lib/" >> /etc/ld.so.conf && \
 # Working directory
 #
 WORKDIR /app/backend
-
-
-USER 1001
